@@ -1,7 +1,6 @@
 
 package com.ppena.ghkanban.activities;
 
-import android.content.Context;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -15,7 +14,6 @@ import com.ppena.ghkanban.entities.Issue;
 import com.ppena.ghkanban.fragments.StateKanbanFragment;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class KanbanActivity extends AppCompatActivity {
 
