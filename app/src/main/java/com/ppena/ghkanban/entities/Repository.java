@@ -1,6 +1,8 @@
 package com.ppena.ghkanban.entities;
 
-public class Repository {
+import java.io.Serializable;
+
+public class Repository implements Serializable{
 
     String name;
     String author;

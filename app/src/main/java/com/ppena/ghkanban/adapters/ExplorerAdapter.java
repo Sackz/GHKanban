@@ -20,7 +20,10 @@ public class ExplorerAdapter extends RecyclerView.Adapter<ExplorerAdapter.Reposi
     List<Repository> repos;
     RepoCallback callback;
 
-
+    public ExplorerAdapter(Context context, List<Repository> repos) {
+        this.context = context;
+        this.repos = repos;
+    }
 
     @NonNull
     @Override
@@ -36,7 +39,7 @@ public class ExplorerAdapter extends RecyclerView.Adapter<ExplorerAdapter.Reposi
         holder.name.setText(item.getName());
         holder.author.setText(item.getAuthor());
 
-        holder.add.setOnClickListener(v -> callback.addRepo(item));
+        holder.add.setOnClickListener(v -> callback.addRepo(position));
 
     }
 
@@ -45,12 +48,12 @@ public class ExplorerAdapter extends RecyclerView.Adapter<ExplorerAdapter.Reposi
         return repos.size();
     }
 
-    void addRepoCallback(RepoCallback callback){
+    public void addRepoCallback(RepoCallback callback){
         this.callback = callback;
     }
 
-    interface RepoCallback{
-        void addRepo(Repository repo);
+    public interface RepoCallback{
+        void addRepo(int pos);
     }
 
     public class RepositoryVH extends RecyclerView.ViewHolder{

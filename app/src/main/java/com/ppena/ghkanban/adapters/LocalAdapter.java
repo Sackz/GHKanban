@@ -20,7 +20,10 @@ public class LocalAdapter extends RecyclerView.Adapter<LocalAdapter.RepoLocalVH>
     List<Repository> repos;
     LocalCallback callback;
 
-
+    public LocalAdapter(Context context, List<Repository> repos) {
+        this.context = context;
+        this.repos = repos;
+    }
 
     @NonNull
     @Override
@@ -36,7 +39,7 @@ public class LocalAdapter extends RecyclerView.Adapter<LocalAdapter.RepoLocalVH>
         holder.name.setText(item.getName());
         holder.author.setText(item.getAuthor());
 
-        holder.itemView.setOnClickListener(v -> callback.addRepo(item));
+        holder.itemView.setOnClickListener(v -> callback.addLocalRepo(item));
 
     }
 
@@ -45,12 +48,12 @@ public class LocalAdapter extends RecyclerView.Adapter<LocalAdapter.RepoLocalVH>
         return repos.size();
     }
 
-    void addRepoCallback(LocalCallback callback){
+    public void addRepoCallback(LocalCallback callback){
         this.callback = callback;
     }
 
-    interface LocalCallback{
-        void addRepo(Repository repo);
+    public interface LocalCallback{
+        void addLocalRepo(Repository repo);
     }
 
     public class RepoLocalVH extends RecyclerView.ViewHolder{
