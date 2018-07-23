@@ -14,6 +14,11 @@ import com.ppena.ghkanban.entities.Repository;
 
 import java.util.List;
 
+/**
+ * Adaptador creado para la creacion de la lista de repositores existentes en local
+ *
+ * @author Pablo Andres Pena
+ */
 public class LocalAdapter extends RecyclerView.Adapter<LocalAdapter.RepoLocalVH> {
 
     Context context;

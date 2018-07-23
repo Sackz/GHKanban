@@ -2,6 +2,13 @@ package com.ppena.ghkanban.entities;
 
 import java.io.Serializable;
 
+/**
+ * Objeto creado para representar el elemento "Issues"
+ *
+ * Esta clase se utilizará para representar los repositorios en las listas que se muestran en la pantalla MainActivity"
+ *
+ * @author Pablo Andres Pena
+ */
 public class Repository implements Serializable{
 
     String name;

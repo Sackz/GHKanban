@@ -15,6 +15,12 @@ import com.ppena.ghkanban.fragments.StateKanbanFragment;
 
 import java.util.ArrayList;
 
+/**
+ * Actividad de presentacion de los "issues" en las diferentes pestañas de estado
+ *
+ * @author Pablo Andres Pena
+ */
+
 public class KanbanActivity extends AppCompatActivity {
 
     ArrayList<Issue> backlog,next,doing,done;

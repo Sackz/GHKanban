@@ -14,6 +14,12 @@ import com.ppena.ghkanban.entities.Repository;
 
 import java.util.List;
 
+/**
+ * Adaptador creado para la creacion de la lista de repositores existentes en Github
+ *
+ * @author Pablo Andres Pena
+ */
+
 public class ExplorerAdapter extends RecyclerView.Adapter<ExplorerAdapter.RepositoryVH> {
 
     Context context;

@@ -14,6 +14,11 @@ import com.ppena.ghkanban.entities.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Actividad inicial de la aplicacion
+ *
+ * @author Pablo Andres Pena
+ */
 public class MainActivity extends AppCompatActivity implements ExplorerAdapter.RepoCallback, LocalAdapter.LocalCallback {
 
     TabLayout tabLayout;

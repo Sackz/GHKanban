@@ -6,8 +6,13 @@ import android.util.Log;
 
 import java.io.Serializable;
 
-import static android.content.ContentValues.TAG;
-
+/**
+ * Objeto creado para representar el elemento "Issues"
+ *
+ * Esta clase se utilizará para representar los problemas en las listas que se utilizan en la actividad "KanbanActivity"
+ *
+ * @author Pablo Andres Pena
+ */
 public class Issue implements Serializable {
 
     String title;

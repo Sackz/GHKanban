@@ -13,6 +13,11 @@ import com.ppena.ghkanban.entities.Issue;
 
 import java.util.List;
 
+/**
+ * Adaptador creado para la creacion de la lista problemas para mostrar en el kanban
+ *
+ * @author Pablo Andres Pena
+ */
 public class IssuesAdapter extends RecyclerView.Adapter<IssuesAdapter.IssuesVH> {
 
     Context context;
